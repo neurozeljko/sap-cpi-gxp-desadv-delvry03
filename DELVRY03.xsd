@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="DELVRY03">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="IDOC">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- EDI_DC40 Control Record -->
+                            <xs:element name="EDI_DC40" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="TABNAM" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="DIRECT" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="IDOCTYP" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="MESTYP" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="SNDPRT" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="SNDPRN" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="RCVPRT" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="RCVPRN" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- E1EDL20 Delivery Header -->
+                            <xs:element name="E1EDL20" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="VBELN" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="VKORG" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="LFART" type="xs:string" minOccurs="0"/>
+                                        <!-- E1EDL24 Delivery Item -->
+                                        <xs:element name="E1EDL24" minOccurs="1" maxOccurs="9999">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="POSNR" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="MATNR" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="CHARG" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="LFIMG" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="VRKME" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="WERKS" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="LGORT" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="BESTQ" type="xs:string" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="BEGIN" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="DESADV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="UNH" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="D_0062" type="xs:string" minOccurs="0"/>
+                            <xs:element name="S_S009" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_0065" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="D_0052" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="D_0054" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="D_0051" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="BGM" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C_C002" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_1001" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="C_C106" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_1004" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="D_1225" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DTM" minOccurs="1" maxOccurs="9">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C_C507">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_2005" type="xs:string"/>
+                                        <xs:element name="D_2380" type="xs:string"/>
+                                        <xs:element name="D_2379" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="RFF" minOccurs="0" maxOccurs="99">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="C_C506">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_1153" type="xs:string"/>
+                                        <xs:element name="D_1154" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="NAD" minOccurs="1" maxOccurs="99">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="D_3035" type="xs:string"/>
+                            <xs:element name="C_C082" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_3039" type="xs:string"/>
+                                        <xs:element name="D_3055" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CPS" minOccurs="1" maxOccurs="9999">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="D_7164" type="xs:string" minOccurs="0"/>
+                            <xs:element name="PAC" minOccurs="0" maxOccurs="99">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_7224" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="LIN" minOccurs="0" maxOccurs="9999">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="D_1082" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="PIA" minOccurs="0" maxOccurs="10">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="D_4347" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="C_C212" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="D_7140" type="xs:string" minOccurs="0"/>
+                                                                <xs:element name="D_7143" type="xs:string" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="IMD" minOccurs="0" maxOccurs="99">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="C_C273" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="D_7008" type="xs:string" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="QTY" minOccurs="0" maxOccurs="10">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="C_C186">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="D_6063" type="xs:string"/>
+                                                                <xs:element name="D_6060" type="xs:string"/>
+                                                                <xs:element name="D_6411" type="xs:string" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="MEA" minOccurs="0" maxOccurs="99">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="D_6311" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="C_C084" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="D_6411" type="xs:string" minOccurs="0"/>
+                                                                <xs:element name="D_6000" type="xs:string" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="LOC" minOccurs="0" maxOccurs="99">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="D_3227" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="C_C517" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="D_3225" type="xs:string" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="UNT" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="D_0074" type="xs:string" minOccurs="0"/>
+                            <xs:element name="D_0062" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
