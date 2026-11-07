@@ -16,6 +16,8 @@ The architecture securely ingests serialized electronic despatch advices (**UN/E
 
 ## Architecture Overview
 
+![SAP CPI GxP DESADV Runtime Architecture](sap-cpi-gxp-desadv-delvry03-runtime-architecture.png)
+
 ### High-Level Topology
 
 ```text
@@ -105,6 +107,7 @@ Operating within life sciences requires adherence to strict computer system vali
 
 ```text
 ├── README.md                                          # Comprehensive architectural documentation
+├── sap-cpi-gxp-desadv-delvry03-runtime-architecture.png # Integration flow runtime topology diagram
 ├── ADR-001-B2B-DESADV-Architecture.md                 # Architecture Decision Record
 ├── DELVRY03.xsd                                       # S/4HANA Delivery IDoc XML Schema
 ├── DESADV_D01B.xsd                                    # EDIFACT D.01B XML Schema
@@ -113,3 +116,11 @@ Operating within life sciences requires adherence to strict computer system vali
 ├── ValidateColdChainQuarantine.groovy                 # Groovy cold-chain telemetry validator
 └── IF_GxP_Inbound_DESADV_to_S4HANA_DELVRY03.zip       # Exported SAP CPI iFlow package
 ```
+
+---
+
+## Author
+
+**Željko Popov**  
+*Integration Architect | SAP Integration Suite & Clean Core Specialist*  
+[GitHub Repositories](https://github.com/neurozeljko)
